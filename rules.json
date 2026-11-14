@@ -1,0 +1,136 @@
+[
+  {
+    "rid": "R008",
+    "field": "status",
+    "op": "NOTNULL",
+    "value": null,
+    "severity": "warn",
+    "priority": 3
+  },
+  {
+    "rid": "R001",
+    "field": "quantity",
+    "op": "RANGE",
+    "value": [
+      1,
+      50
+    ],
+    "severity": "warn",
+    "priority": 3
+  },
+  {
+    "rid": "R002",
+    "field": "quantity",
+    "op": "LT",
+    "value": 30,
+    "severity": "error",
+    "priority": 3
+  },
+  {
+    "rid": "R003",
+    "field": "discount",
+    "op": "RANGE",
+    "value": [
+      0,
+      0.5
+    ],
+    "severity": "error",
+    "priority": 5
+  },
+  {
+    "rid": "R004",
+    "field": "discount",
+    "op": "GT",
+    "value": 0.3,
+    "severity": "warn",
+    "priority": 2
+  },
+  {
+    "rid": "R005",
+    "field": "price",
+    "op": "GT",
+    "value": 0,
+    "severity": "error",
+    "priority": 3
+  },
+  {
+    "rid": "R006",
+    "field": "price",
+    "op": "RANGE",
+    "value": [
+      1,
+      500
+    ],
+    "severity": "warn",
+    "priority": 3
+  },
+  {
+    "rid": "R007",
+    "field": "status",
+    "op": "IN",
+    "value": [
+      "PAID",
+      "PENDING",
+      "CANCELLED"
+    ],
+    "severity": "error",
+    "priority": 3
+  },
+  {
+    "rid": "R009",
+    "field": "region",
+    "op": "IN",
+    "value": [
+      "north",
+      "south",
+      "east",
+      "west"
+    ],
+    "severity": "warn",
+    "priority": 2
+  },
+  {
+    "rid": "R010",
+    "field": "channel",
+    "op": "IN",
+    "value": [
+      "app",
+      "web",
+      "wap"
+    ],
+    "severity": "warn",
+    "priority": 2
+  },
+  {
+    "rid": "R011",
+    "field": "pay_type",
+    "op": "EQ",
+    "value": "online",
+    "severity": "warn",
+    "priority": 2
+  },
+  {
+    "rid": "R012",
+    "field": "coupon_code",
+    "op": "NOTNULL",
+    "value": null,
+    "severity": "warn",
+    "priority": 4
+  },
+  {
+    "rid": "SUM01",
+    "field": "amount",
+    "op": "SUM",
+    "value": 147958.318,
+    "severity": "error",
+    "priority": 2
+  },
+  {
+    "rid": "SUM02",
+    "field": "refund",
+    "op": "SUM",
+    "value": 670.42,
+    "severity": "error",
+    "priority": 2
+  }
+]
